@@ -5,10 +5,51 @@ build-backend = "hatchling.build"
 [project]
 name = "mindcase"
 version = "0.3.0"
-description = "Python SDK for the Mindcase Developer API"
+description = "Python SDK for the Mindcase API — collect structured data from 30+ web sources including LinkedIn, Instagram, Amazon, Google Maps, and more."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
+authors = [
+    { name = "Mindcase", email = "team@mindcase.co" },
+]
+keywords = [
+    "mindcase",
+    "web-scraping",
+    "data-collection",
+    "api",
+    "sdk",
+    "linkedin-scraper",
+    "instagram-scraper",
+    "amazon-scraper",
+    "google-maps-scraper",
+    "youtube-scraper",
+    "twitter-scraper",
+    "tiktok-scraper",
+    "reddit-scraper",
+    "data-extraction",
+    "lead-generation",
+    "market-research",
+    "price-monitoring",
+    "social-media-api",
+    "e-commerce-data",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Typing :: Typed",
+]
 dependencies = [
     "requests>=2.25.0",
 ]
@@ -16,7 +57,9 @@ dependencies = [
 [project.urls]
 Homepage = "https://mindcase.co"
 Documentation = "https://docs.mindcase.co"
-Repository = "https://github.com/mindcase-team/studio"
+Repository = "https://github.com/mindcase-team/mindcase-python"
+Issues = "https://github.com/mindcase-team/mindcase-python/issues"
+Changelog = "https://github.com/mindcase-team/mindcase-python/releases"
 
 [tool.hatch.build.targets.wheel]
 packages = ["mindcase"]
