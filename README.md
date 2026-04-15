@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/mindcase.svg)](https://pypi.org/project/mindcase/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 Collect structured data from 30+ web sources with a single API call. The official Python SDK for [Mindcase](https://mindcase.co).
 
@@ -158,9 +158,36 @@ client = Mindcase(
 
 Sign up at [app.mindcase.co](https://app.mindcase.co) and create an API key in the API Console.
 
+## MCP Server (Claude Integration)
+
+This package includes a built-in MCP server that exposes all 30+ agents as Claude tools.
+
+**Add to Claude Code:**
+
+```bash
+claude mcp add mindcase -- mindcase mcp
+```
+
+**Add to Claude Desktop** (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "mindcase": {
+      "command": "uvx",
+      "args": ["mindcase", "mcp"],
+      "env": {
+        "MINDCASE_API_KEY": "mk_live_..."
+      }
+    }
+  }
+}
+```
+
+Then ask Claude: *"Find the top 10 AI startups on LinkedIn"* or *"Get reviews for this Amazon product"*.
+
 ## Also Available
 
-- **[MCP Server](https://pypi.org/project/mindcase-mcp/)** — `uvx mindcase-mcp` to use Mindcase agents directly from Claude, no code needed
 - **[Node.js SDK](https://www.npmjs.com/package/mindcase)** — `npm install mindcase` for JavaScript/TypeScript
 
 ## Documentation
