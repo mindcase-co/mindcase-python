@@ -42,6 +42,7 @@ for row in results:
 | **App Store** | Reviews | App sentiment analysis, feature request mining |
 | **Flipkart** | Products | Indian e-commerce pricing, product data |
 | **Myntra** | Products | Fashion e-commerce data, trend analysis |
+| **Quick Commerce** | Search, PDP, Category | Blinkit, Instamart, Zepto price monitoring |
 
 See all agents and parameters: [docs.mindcase.co/agents-overview](https://docs.mindcase.co/agents-overview)
 
